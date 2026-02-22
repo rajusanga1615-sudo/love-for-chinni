@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For My Love ❤️</title>
+
+<style>
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #ffe6f0;
+  margin-top: 120px;
+}
+
+h1 {
+  color: #d63384;
+}
+
+h2 {
+  color: #444;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 18px;
+  margin: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#yesBtn {
+  background-color: #ff4d88;
+  color: white;
+}
+
+#noBtn {
+  background-color: #999;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<h1>My Dear Wife ❤️</h1>
+<h2>Can I tell you something? 🥺</h2>
+
+<button id="yesBtn" onclick="yesClicked()">YES 💖</button>
+<button id="noBtn" onmouseover="moveNo()">NO 😜</button>
+
+<script>
+function yesClicked() {
+  alert("Yayyy ❤️ I love you!\n\nYou are the most beautiful thing that ever happened in my life.\n\nPlease don’t ever feel that I am not spending time with you. I am working hard to build our financial independence so that I can give you, Chinnu, and our upcoming baby the best life possible.\n\nDon’t forget... you are the only person I always think about ❤️");
+}
+
+function moveNo() {
+  var btn = document.getElementById("noBtn");
+
+  var maxX = window.innerWidth - btn.offsetWidth;
+  var maxY = window.innerHeight - btn.offsetHeight;
+
+  var x = Math.random() * maxX;
+  var y = Math.random() * maxY;
+
+  btn.style.position = "absolute";
+  btn.style.left = x + "px";
+  btn.style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
